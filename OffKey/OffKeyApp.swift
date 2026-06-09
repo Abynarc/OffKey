@@ -1,17 +1,10 @@
-//
-//  OffKeyApp.swift
-//  OffKey
-//
-//  Created by Илья Баранов on 09.06.2026.
-//
-
 import SwiftUI
 
 @main
 struct OffKeyApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+        Settings { EmptyView() } // без видимого окна
     }
 }
