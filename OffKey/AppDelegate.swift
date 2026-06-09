@@ -1,12 +1,10 @@
 import Cocoa
 
-@main
 class AppDelegate: NSObject, NSApplicationDelegate {
     private var statusItem: NSStatusItem!
     private let blocker = KeyboardBlocker.shared
 
     func applicationDidFinishLaunching(_ notification: Notification) {
-        // Убрать главное окно SwiftUI
         for window in NSApp.windows {
             window.close()
         }
@@ -49,8 +47,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             let alert = NSAlert()
             alert.messageText = "Нет доступа к мониторингу ввода"
             alert.informativeText = """
-            Открой Системные настройки → Конфиденциальность и безопасность → Мониторинг ввода
-            и включи OffKey, затем перезапусти приложение.
+            Открой Системные настройки → Конфиденциальность и безопасность → Мониторинг ввода,
+            включи OffKey и перезапусти приложение.
             """
             alert.runModal()
         }
