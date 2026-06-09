@@ -6,37 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9118F8722FD80D9000818320 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9118F8712FD80D9000818320 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		9118F84C2FD7FD7400818320 /* OffKey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OffKey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9118F8712FD80D9000818320 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		9118F8682FD805AB00818320 /* Exceptions for "OffKey" folder in "OffKey" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Assets.xcassets,
-			);
-			target = 9118F84B2FD7FD7400818320 /* OffKey */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-		9118F8692FD805AB00818320 /* Exceptions for "OffKey" folder in "Compile Sources" phase from "OffKey" target */ = {
-			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
-			buildPhase = 9118F8482FD7FD7400818320 /* Sources */;
-			membershipExceptions = (
-				Assets.xcassets,
-			);
-		};
-/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		9118F84E2FD7FD7400818320 /* OffKey */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				9118F8682FD805AB00818320 /* Exceptions for "OffKey" folder in "OffKey" target */,
-				9118F8692FD805AB00818320 /* Exceptions for "OffKey" folder in "Compile Sources" phase from "OffKey" target */,
-			);
 			path = OffKey;
 			sourceTree = "<group>";
 		};
@@ -56,6 +37,7 @@
 		9118F8432FD7FD7400818320 = {
 			isa = PBXGroup;
 			children = (
+				9118F8712FD80D9000818320 /* Assets.xcassets */,
 				9118F84E2FD7FD7400818320 /* OffKey */,
 				9118F84D2FD7FD7400818320 /* Products */,
 			);
@@ -133,6 +115,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9118F8722FD80D9000818320 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,14 +255,15 @@
 		9118F8582FD7FD7600818320 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = OffKey_AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OffKey/OffKey.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 87CLRXHC6P;
 				ENABLE_APP_SANDBOX = NO;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSUIElement = YES;
@@ -304,14 +288,15 @@
 		9118F8592FD7FD7600818320 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = OffKey_AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OffKey/OffKey.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 87CLRXHC6P;
 				ENABLE_APP_SANDBOX = NO;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSUIElement = YES;
